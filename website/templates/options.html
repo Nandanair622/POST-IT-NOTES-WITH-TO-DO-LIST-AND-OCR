@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose option</title>
+    <style>
+      body {
+        background-color: rgb(216, 212, 212);
+      }
+      .column {
+        font-family: "Times New Roman", Times, serif;
+        padding: 50px;
+        font-size: 20px;
+        float: left;
+        width: 28%;
+        margin: 20px;
+        background-color: black;
+        color: white;
+        transition: 0.2s ease-in-out 0s;
+      }
+      .row {
+        padding-left: 73px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .space {
+        padding-bottom: 17%;
+      }
+
+      button.column:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        background: #fff;
+        color: #000;
+        border-radius: 7px;
+      }
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="space"></div>
+    <div class="row">
+      <a href="/addnotes"><button class="column">Add Notes</button></a>
+      <a href="todo.html"><button class="column">To-do List</button></a>
+      <a href="/upload"><button class="column">Image-to-Text</button></a>
+    </div>
+  </body>
+</html>

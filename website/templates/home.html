@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<title>Home</title>
+<header class="masthead" style="background-image: url(' static/img/new.png ')">
+    <!--<body style="background-color: rgb(19, 19, 20);">-->
+
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1 >STICKIEZ</h1>
+                            <span class="subheading">START WRITING YOUR NOTES HERE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!--<ul class="list-group list-group-flush" id="notes">-->
+  {% for note in user.notes %}
+  <!--<li class="list-group-item">-->
+<div style="box-shadow: 10px 10px 5px #aaaaaa">
+<div class="card" >
+
+                <div class="card-big-shadow">
+                    <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                        <div class="content">
+                            {{ note.data }}
+<button type="button" class="close" onClick="deleteNote({{ note.id }})">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+</div>
+        </div>
+    <!--<{{ note.data }}
+      <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </li>-->
+
+    <p>                </p>
+  {% endfor %}
+<!--</ul>-->
+
+<form method="POST">
+
+  <textarea name="note" id="note" class="form-control" placeholder="Add New Note"></textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-dark">Add Note</button>
+  </div>
+</form>
+<p>                </p>
+<p>                </p>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<form method="POST">
+  <!-- Section: Design Block -->
+  <section class="background-radial-gradient overflow-hidden">
+    <style>
+    .login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url(' static/img/login-bg.png ');
+  background-size: cover;
+  background-position: center center;
+}
+</style>
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <!-- The image half -->
+        <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+        <!-- The content half -->
+        <div class="col-md-6 bg-light">
+            <div class="login d-flex align-items-center py-5">
+
+                <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <h3 class="display-4">LOGIN</h3>
+                          <br>
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+
+                <!-- Email input -->
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+
+                <!-- Password input -->
+<p>  </p>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+                </div>
+    </br>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-dark btn-block text-uppercase mb-2 rounded-pill shadow-sm">Login</button>
+              </form>
+            </div>
+                    </div>
+                </div><!-- End -->
+
+            </div>
+        </div><!-- End -->
+
+    </div>
+</div>
+  </section>
+  <!-- Section: Design Block -->
+  {% endblock %}
+</form>
