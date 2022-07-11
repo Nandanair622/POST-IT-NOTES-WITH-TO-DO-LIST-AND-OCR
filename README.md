@@ -13,3 +13,10 @@ While comparing with apps online like Mi notes, it is found that the deleted not
 <li>Image-to-Text Converter.</li>
 <li>To create a to-do list for the day.</li>
 </ul> 
+ 
+## <strong>Developers</strong><br>
+<ul>
+<li>Nandana Nair</li>
+<li>Prajwal Patil</li>
+<li>Sakshi Patil</li>
+</ul>
